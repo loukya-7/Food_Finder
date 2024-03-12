@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+.main{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container{
+    font-family: "Libre Baskerville", serif;
   }
-  to {
-    transform: rotate(360deg);
+  body{
+    background: #FF512F;  
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  
+    background: linear-gradient(to right, #F09819, #FF512F); 
+    font-family:"Poppins", sans-serif;;
+    
   }
+  .sofia-text{
+    font-family: "Libre Baskerville", serif;
+
+  }
+ /* 
+ .nav{
+   
+    background-color: #0d0de1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 17%;
+   
+  }
+  
+  .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search input{
+    width: 25rem;
+    height: 26px;
+   
+  }
+  .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43%;
+  }
+  
+  .right div{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .right div:hover{
+    background-color: rgb(28, 28, 61);
+  }
+  */
+  .text-black:hover{
+    color:orangered;
+  }
+  .bg-orange{
+    background-color: black;
+    color:white;
+  }
+  .bg-orange:hover{
+    background-color: orangered;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    margin-left: 2rem;
+    perspective: 800px;
+  }
+  
+  
+  .slider img{
+    border-radius: 5%;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+    margin-left: 8rem;
+  }
+  
+  .slider img:hover{
+    transform: translateZ(100px);
+    border: 2px solid orangered;
+  }
+  
+  .slider2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    width: 98%;
+    margin: 1rem;
+  }
+  
+  .slider2 img{
+    border-radius: 5%;
+    border: 2px solid rgb(87, 87, 165);
+    transition: transform 0.3s ease;
+  }
+  
+  .slider2 img:hover{
+    transform: translateZ(150px);
+    border: 2px solid yellow;
+  }
+  
+  .btn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:orangered;
+    border-radius: 5%;
+    margin: 2rem;
+    border: 2px solid orange;
+    color:white;
+  }
+  .btn1{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: orangered;
+    border-radius: 5%;
+    margin: 2rem;
+    border: 2px solid orange;
+    color: white;
+   
+  }
+  .para1{
+    text-align: justify;
+    color: white;
+  }
+  .img {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+    height: 50%;
+    gap: 2em;
+    
 }
+
+.img img {
+    
+    border-radius: 5%; 
+    transition: transform 0.3s ease;
+}
+.img img:hover{
+  transform: scale(1.1);
+}
+  
+  .link{
+    text-decoration: none;
+    color: white;
+  }
+  .link :hover{
+    color: white;
+  }
+  .text{
+    margin-top: 2em;
+    font-size: 1.5rem;
+
+  }
